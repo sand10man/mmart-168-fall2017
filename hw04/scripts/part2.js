@@ -1,3 +1,5 @@
+// Steve DeNault
+
 let language = 'English'
 let languageCode = 'en'
 let jsonData
@@ -18,7 +20,14 @@ const setLanguage = (code) => {
     //clear form:
     document.querySelector("pre").innerHTML = ''
 }
+/*the getData forma a URL from 2 parts: a base twiiter URL plus a language code modifier
+(a json object).
+The search term is added to these two components to complete the twitterURL.
 
+In the console window you would access the first element with jsonData.statuses[0].
+To reference the name property, which is inside of the user property for the second
+status in the jsonData.statuses list: jsonData.statuses[1].text
+*/
 
 const getData = () => {
     const term = document.getElementById('term').value
