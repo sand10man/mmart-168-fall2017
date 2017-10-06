@@ -20,6 +20,49 @@ const setLanguage = (code) => {
     getData()
 }
 
+const reverseText = (text) => {
+  return text.split('').reverse().join('')
+}
+
+const reverseText_2 = (str) => {
+    // Step 1. Use the split() method to return a new array
+    var splitString = str.split('') // var splitString = "hello".split("");
+    // ["h", "e", "l", "l", "o"]
+
+    // Step 2. Use the reverse() method to reverse the new created array
+    var reverseArray = splitString.reverse() // var reverseArray = ["h", "e", "l", "l", "o"].reverse();
+    // ["o", "l", "l", "e", "h"]
+
+    // Step 3. Use the join() method to join all elements of the array into a string
+    var joinArray = reverseArray.join('') // var joinArray = ["o", "l", "l", "e", "h"].join("");
+    // "olleh"
+
+    //Step 4. Return the reversed string
+    return joinArray // "olleh"
+}
+
+const reverseText_1 = (theText) => {
+  //1. Split string (theText) into an array of characters
+  //2. Reverse the order of the array
+  //3. Convert sorted array back into a string
+  let reversedText = ''
+  for (let i = theText.length - 1; i >=0; i--) {
+    reversedText += theText[i]
+  }
+  return reversedText
+}
+
+const reverseTweet = (tweetText) => {
+  //if tweet has a hashtag return normal tweetText
+  //else reverse tweetText
+  if (tweetText.indexOf('#') === -1) {
+    //reverse if no hash tag
+    return reverseText (tweetText)
+  } else {
+    return tweetText
+  }
+}
+
 const clearData = () => {
     const element = document.getElementById('results')
     while (element.firstChild) {
@@ -28,6 +71,7 @@ const clearData = () => {
 }
 
 //Note: language codes here: https://www.w3schools.com/tags/ref_language_codes.asp
+
 const getData = () => {
 
     const term = document.getElementById('term').value
@@ -68,7 +112,7 @@ const getData = () => {
             json.statuses.forEach((status) => {
                 div = document.createElement('div')
                 div.className = 'tweet'
-                textNode = document.createTextNode(status.text)
+                textNode = document.createTextNode(reverseText(status.text))
                 div.appendChild(textNode)
                 document.getElementById('results').appendChild(div)
             })
