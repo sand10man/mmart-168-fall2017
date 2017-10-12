@@ -14,6 +14,16 @@ Create a new branch to do Homework 5
 ## PART II: Reading response
 Edit README.MD and write your reading response here!
 
+This is the 2012 Chris Granger article on Light Table, http://www.chris-granger.com/2012/04/12/light-table-a-new-ide-concept/.  This presents the idea that an ideal IDE would be much more than a code editor (and indeed, IDEs have been developing somewhat in this way in the last 5 years).  Things that Granger was looking for were all the tools that a developer would need would reside within the IDE itself: reference, documentation and instant error feedback. From the article, here are five guiding principles:
+•  You should never have to look for documentation
+•  Files are not the best representation of code, just a convenient serialization.
+•  Editors can be anywhere and show you anything - not just text.
+•  Trying is encouraged - changes produce instantaneous results
+•  We can shine some light on related bits of code
+Here’s an idea: “Light Table lets you see what functions are used inside of the one you're currently working on, not just by highlighting ones in your code, but by also showing you their code to the side.”  Another idea always show how values flow through entire codebase: having this information always at the fore could prevent lots of errors.
+This is the seminal article on Light Table, which has been developed as an IDE since and led to other IDE developments.  The big idea is to help developers maintain a larger view of their code rather than being locked into an opaque maze of complexity.
+
+
 ## Part III: JavaScript Homework
 
 ### Step 1: Reverse a tweet
