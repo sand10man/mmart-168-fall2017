@@ -1,3 +1,4 @@
+// Steve DeNault
 # HOMEWORK 5: MANIPULATING TWITTER DATA WITH FUNCTIONS
 > * Due date: Midnight on Wednesday, 10/11 (1 week)
 > * Part I: Using Github because no pain, no gain
@@ -17,6 +18,17 @@ This homework will require some googling. As a software engineer, a lot of what 
 
 ## PART II: Reading response
 Edit README.MD and write your reading response here!
+Wikipedia TLA+
+
+This language is “used to design, model, document, and verify concurrent systems”, “described as exhaustively-testable pseudocode.”  It was designed by mathematician Leslie Lamport and first appeared in 1999.  The idea is to have code that is self-testable for bugs, logic flaws.  This is designed for mission-critical code for applications that have life/ death consequences.
+
+There is a built-in proof system and model checker.  Mathematical proofs underlie the code.  A deep knowledge of this code is reputed to be very rigorous but this code is said to still be very useful for making solid code at a less rigorous level.  There is an IDE distributed by The TLA Toolbox.
+
+Premature now, but I would like to look into this eventually.
+
+About the extra credit: a bit interesting but a bit off-point, premature.  It also seems to me that using
+After Effects could be a much more efficient way of getting intricate graphics onto a site.
+
 
 ## Part III: JavaScript Homework
 

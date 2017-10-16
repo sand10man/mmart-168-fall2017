@@ -1,4 +1,4 @@
-// ------------------------------------
+//Steve DeNault
 // PART 1
 // ------------------------------------
 // Write a function called toggleLike. It takes no parameters
@@ -18,11 +18,13 @@ if (document.querySelector('.like').classList.contains ('active'))
     })
   }
 }
-const toggleLIke = () => {
-    if (document.getElementById('like').classList.contains('active')) {
-       document.getElementById('like').classList.remove('active')
+
+const toggleLike = () => {
+
+    if (document.getElementById('Like1').classList.contains('active')) {
+       document.getElementById('Like1').classList.remove('active')
     } else {
-        (document.getElementById('like').classList.add('active')
+        document.getElementById('Like1').classList.add('active')
     }
 }
 // ------------------------------------
@@ -33,5 +35,5 @@ const toggleLIke = () => {
 // Without writing a conditional statement,
 // use the classList to toggle the 'active class'
 const toggle = () => {
-  document.getElementById('like').classList.toggle('active')
+  document.getElementById('Like2').classList.toggle('active')
 }
