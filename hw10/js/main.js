@@ -9,7 +9,10 @@ const makeStationList = () => {
         })
         .then((json) => {
             json = json.root
-            console.log(json)
+            console.log(json.stations.station[0].name)
+            console.log(json.stations.station)
+            console.log(json.stations.station)
+            //How o I use the ata returne from BARRT
 
             // PART III.A.: Use a loop to populate the select menu with *ALL*
             // of the stations that are returned from the BART data feed:
@@ -22,6 +25,16 @@ const makeStationList = () => {
             console.log(err)
         })
 }
+
+
+
+
+
+
+
+
+
+
 
 const getArrivalTimes = () => {
     const stationList = document.getElementById('station_list')
