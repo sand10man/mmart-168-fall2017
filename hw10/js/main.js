@@ -8,18 +8,38 @@ const makeStationList = () => {
             return response.json()
         })
         .then((json) => {
+            //Now do some godd stuff with your new data
             json = json.root
+            /*
             console.log(json.stations.station[0].name)
-            console.log(json.stations.station)
-            console.log(json.stations.station)
-            //How o I use the ata returne from BARRT
+            console.log(json.stations.station[1].name)
+            console.log(json.stations.station[2].name)
+            */
+            const stations = json.stations.station
+            stations.forEach((station) => {
+              console.log(station.name)
+              //create the option getElementById
+              const paragraph = document.createElement("p")
+              option.innerHTML = station.name
+              document.getElementById('results').appendChild(paragraph)
+              /*
+              const option = document.createElement("option")
+              option.innerHTML = station.name
+              document.getElementById('station_list').appendChild(option)
+              */
+            })
+
+            //How o I use the ata returne from BARRT to populate my
+            //dropdown meno?
 
             // PART III.A.: Use a loop to populate the select menu with *ALL*
             // of the stations that are returned from the BART data feed:
+            /*
             const option1 = document.createElement("option")
             option1.value = 'DBRK'
             option1.innerHTML = 'Downtown Berkeley'
             document.getElementById('station_list').appendChild(option1)
+            */
         })
         .catch((err) => {
             console.log(err)
