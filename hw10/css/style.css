@@ -1,3 +1,40 @@
+/* Steeve DeNault The idea was to incorporate old time train (font) with modern color */
+
+@import url('https://fonts.googleapis.com/css?family=Vollkorn+SC');
+
 body {
     background: #F0F0F0;
+    font-family: 'Vollkorn SC', serif;
+}
+
+span {
+  border: solid 1px blue;
+  margin: 10px;
+  display: inline-block;
+  padding: 8px;
+  font-weight: bold;
+  font-size: 14pt
+
+}
+
+select#station_list {
+    width: 100%
+    height: 36px;
+    font-size: 18pt;
+    color: navy;
+    font-weight: bold;
+    font-family: 'Vollkorn SC', serif;
+    background-color: LightCyan;
+}
+
+p {
+    font-weight: bold;
+}
+.frame  {
+  width: 660px;
+  margin: 20px auto 10px auto;
+  border: solid 5px aqua;
+
+  padding: 6px;
+  background-color: LavenderBlush
 }

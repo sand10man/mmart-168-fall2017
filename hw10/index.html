@@ -1,3 +1,5 @@
+<!--Steve DeNault: The goal is to make this clear and attractive -->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,22 +8,18 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <select id="station_list" onchange="getArrivalTimes(this)">
-            <option value="">-- Select Your Station--</option>
-            <option value="">-- Select Your Station--</option>
-            <option value="">-- Select Your Station--</option>
-            <option value="">-- Select Your Station--</option>
-            <option value="">-- Select Your Station--</option>
-            <option value="">-- Select Your Station--</option>
-            <option value="">-- Select Your Station--</option>
+      <div class = 'frame'>
+          <select id="station_list" onchange="getArrivalTimes(this)">
+              <option value="">-- BART: Select Your Station: Departures--</option>
+              <!--Dynamically apend station options here, using BART API Endpoint
+              -->
+          </select>
 
-
-
-        </select>
-
-        <main id="results">
-            <!-- JavaScript should populate your code here -->
-        </main>
+          <div id="results">
+            <!--Dynamically create ETD dashboard, using BART ETD stations API Endoint
+               JavaScript should populate your code here -->
+          </div>
+      </div>
 
         <script src="js/main.js"></script>
     </body>
