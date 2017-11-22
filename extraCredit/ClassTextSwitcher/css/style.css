@@ -1,0 +1,55 @@
+/* Steve DeNault  lots of changes to the emoji here, also the
+buttons.  The rotation was done by importing functionality.  Other
+modifications had to be done subsequently to confine the area of the emojis
+and to properly reorient them on the HTML page.
+*/
+
+body {
+  margin: 100px;
+  text-align: center;
+}
+
+.emoji {
+  font-weight: bold;
+  font-size: 120px;
+  color:purple;
+}
+
+.orange {
+  background-color: Orange;
+  color: Purple;
+}
+.green {
+  background-color: Green;
+  color: Orange;
+}
+.blue {
+  background-color: Blue;
+  color: Gold;
+}
+.red {
+  background-color: Red;
+  color:Blue;
+}
+.rotate {
+
+    /* Safari */
+    -webkit-transform: rotate(+90deg);
+
+    /* Firefox */
+    -moz-transform: rotate(+90deg);
+
+    /* IE */
+    -ms-transform: rotate(+90deg);
+
+    /* Opera */
+    -o-transform: rotate(+90deg);
+
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    margin-top: 50px;
+    margin-left: 540px;
+    height: 100px;
+    width: 100px;
+
+}

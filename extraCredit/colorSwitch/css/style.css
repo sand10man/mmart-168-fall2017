@@ -1,0 +1,13 @@
+.container {
+     width: 700px;
+     margin-top: 30px;
+     text-align: center;
+}
+
+.btn, .form-control {
+     display: inline-block;
+     vertical-align: middle;
+}
+.form-control {
+     width: 300px;
+}

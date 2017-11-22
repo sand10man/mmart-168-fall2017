@@ -1,0 +1,28 @@
+/* Steve DeNault btn modified  */
+
+body {
+  margin: 50px;
+  text-align: center;
+}
+
+#btn {
+  /*
+  width: 100px;
+  height: 36px;
+  */
+  font-size: 14pt;
+  font-weight: bold;
+  background-color: LightGreen;
+}
+/*
+.btn, .form-control {
+     display: inline-block;
+     vertical-align: middle;
+}
+
+.form-control {
+  width: 100px;
+  height: 36px;
+  font-size: 14pt;
+  background-color: LightGreen;
+  */

@@ -1,0 +1,35 @@
+/*Steve DeNault  Secret div gets a purple marker */
+
+.form-control, .btn {
+    display: inline-block;
+}
+.form-control {
+    width: 370px;
+}
+.container {
+     width: 500px;
+     margin-top: 30px;
+}
+
+#output {
+    font-size: 30px;
+    font-weight: bold;
+    color: #19647E;
+    margin-top: 30px;
+}
+#guesses, #output {
+
+    text-align: center;
+}
+
+#secret {
+    font-weight: bold;
+    font-size: 30px;
+    background-color: purple;
+    border: solid 4px #19647E;
+    padding: 10px;
+    bottom: 10px;
+    position: absolute;
+    left: 16px;
+    text-align: center;
+}
