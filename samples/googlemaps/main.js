@@ -1,8 +1,9 @@
 let map = null
 const locations = [
     {
-        lat: 37.8697651,
-        lng: -122.2711251
+        lat: 37.8698168,
+        lng: -122.2720481
+
     },
     {
         lat: 37.77,
