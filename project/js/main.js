@@ -67,10 +67,7 @@ const makeStationList = () => {
               const option = document.createElement("option")
               option.innerHTML = station.name
               document.getElementById('station_list').appendChild(option)
-              */
 
-//const locations = [
-  /*
   {
       lat: 37.8698168,
       lng: -122.2720481
